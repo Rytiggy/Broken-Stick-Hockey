@@ -41,8 +41,11 @@ $( document ).ready(function() {
 function setupHomepage(data) {
     let title = $('#home-title');
     let description = $('#home-description');
+    let upcomingSchedule = $('#upcoming-schedule-title');
+    console.log(data.metadata.upcoming_schedule)
     title.text(data.title)
     description.text(data.metadata.homepage_description)
+    upcomingSchedule.html(data.metadata.upcoming_schedule)
 }
 
 
