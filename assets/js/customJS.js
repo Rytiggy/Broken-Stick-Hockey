@@ -10,7 +10,6 @@ $( document ).ready(function() {
         error: function(data){
         },
         success: function(data){
-            console.log('data', data)
           //do something with data 
             setupContact(data.objects[0])
             setupFooter(data.objects[1])
@@ -42,7 +41,6 @@ $( document ).ready(function() {
 
 
 function setupHomepage(data) {
-    console.log('home' , data)
     let title = $('#home-title');
     let description = $('#home-description');
 
@@ -81,14 +79,15 @@ function setupAbout(data) {
     let faq = $('#faq-description');
     let assumptions = $('#assumptions-description');
     let concussion = $('#concussion-description');
+    let concussionPdf = $('#concussion-pdf')
 
-    console.log('about ' , data)
     title.text(data.title)
     description.html(data.content)
     rules.html(data.metadata.rules_and_policies)
     faq.html(data.metadata.faq)
     assumptions.html(data.metadata.assumption_of_risk)
     concussion.html(data.metadata.concussion_protocol)
+    concussionPdf.attr('src', data.metadata.concussion_pdf.url)
 
 }
 
@@ -111,7 +110,6 @@ function setupW2W(data) {
 }
 
 function setupFooter(data) {
-    console.log('setupFooter' , data)
     let footerAddress = $('#footer-address');
     let footerDescription = $('#footer-description');
     let footerEmail = $('#footer-email');
@@ -124,12 +122,7 @@ function setupFooter(data) {
 }
 
 
-setupContact
-
-
-
 function setupContact(data) {
-    console.log('setupContact' , data)
     let contactTitle = $('#contact-title');
     let contactDescription = $('#contact-description');
 
