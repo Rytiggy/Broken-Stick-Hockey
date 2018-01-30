@@ -197,7 +197,7 @@
                                   <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                       <div class="form-wrapper">
-                                        <form>
+                                        <form  action="https://formspree.io/ryanmasonjar@gmail.com"  method="POST"> 
                                           <!-- inputs -->
                                           <div class="form-group">
                                             <label class="sr-only" for="name">Name</label>
@@ -238,55 +238,6 @@
                                             </button>
                                           </div>
                                         </form>
-
-
-
-
-
-
-
-                                    <?php
-                                    //if "email" variable is filled out, send email
-                                      if (isset($_REQUEST['email']))  {
-                                      
-                                      //Email information
-                                      $admin_email = "ryanmasonjar@gmail.com";
-                                      $email = $_REQUEST['email'];
-                                      $subject = $_REQUEST['subject'];
-                                      $comment = $_REQUEST['comment'];
-                                      
-                                      //send email
-                                      mail($admin_email, "$subject", $comment, "From:" . $email);
-                                      
-                                      //Email response
-                                      echo "Thank you for contacting us!";
-                                      }
-                                      
-                                      //if "email" variable is not filled out, display the form
-                                      else  {
-                                    ?>
-
-                                     <form method="post">
-
-                                      Email: <input name="email" type="text" />
-
-                                      Subject: <input name="subject" type="text" />
-
-                                      Message:
-
-                                      <textarea name="comment" rows="15" cols="40"></textarea>
-
-                                      <input type="submit" value="Submit" />
-                                      </form>
-                                      
-                                    <?php
-                                      }
-                                    ?>
-
-
-
-
-
                                       </div>
                                     </div>
                                   </div>
@@ -298,7 +249,12 @@
                 </div><!-- End off container -->
             </section><!-- End off Featured Section-->
 
+<script>
 
+
+"mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!"
+
+</script>
 
 
 
