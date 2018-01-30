@@ -10,11 +10,14 @@ $( document ).ready(function() {
         error: function(data){
         },
         success: function(data){
+            console.log('data', data)
           //do something with data 
-          setupHomepage(data.objects[3]) 
-          setupAbout(data.objects[2])
-          setupLocations(data.objects[1])
-          setupW2W(data.objects[0])
+            setupContact(data.objects[0])
+            setupFooter(data.objects[1])
+            setupW2W(data.objects[2])
+            setupLocations(data.objects[3])
+            setupAbout(data.objects[4])
+            setupHomepage(data.objects[5]) 
         }
     });
 
@@ -39,13 +42,33 @@ $( document ).ready(function() {
 
 
 function setupHomepage(data) {
+    console.log('home' , data)
     let title = $('#home-title');
     let description = $('#home-description');
-    let upcomingSchedule = $('#upcoming-schedule-title');
+
+    let infoOneTitle = $('#three-item-row-two-one');
+    let infoOneDiscription = $('#three-item-row-one');
+    let infoTwoTitle = $('#three-item-row-two-title');
+    let infoTwoDiscription = $('#three-item-row-two');
+    let infoThreeTitle = $('#three-item-row-three-title');
+    let infoThreeDiscription = $('#three-item-row-three');
+
+
+
+
     console.log(data.metadata.upcoming_schedule)
     title.text(data.title)
-    description.text(data.metadata.homepage_description)
-    upcomingSchedule.html(data.metadata.upcoming_schedule)
+    description.html(data.metadata.homepage_description)
+
+    infoOneTitle.text(data.metadata.info_layer_one_title)
+    infoOneDiscription.text(data.metadata.info_layer_one_description)
+
+    infoTwoTitle.text(data.metadata.info_layer_two_title)
+    infoTwoDiscription.text(data.metadata.info_layer_two_description)
+
+    infoThreeTitle.text(data.metadata.info_layer_three_title)
+    infoThreeDiscription.text(data.metadata.info_layer_three_description)
+
 }
 
 
@@ -59,7 +82,7 @@ function setupAbout(data) {
     let assumptions = $('#assumptions-description');
     let concussion = $('#concussion-description');
 
-    
+    console.log('about ' , data)
     title.text(data.title)
     description.html(data.content)
     rules.html(data.metadata.rules_and_policies)
@@ -85,5 +108,34 @@ function setupW2W(data) {
     let description = $('#week-to-week-description');
     title.text(data.title)
     description.html(data.content)
+}
+
+function setupFooter(data) {
+    console.log('setupFooter' , data)
+    let footerAddress = $('#footer-address');
+    let footerDescription = $('#footer-description');
+    let footerEmail = $('#footer-email');
+
+    
+    footerDescription.html(data.content)
+    footerAddress.html(data.metadata.footer_location)
+    footerEmail.text(data.metadata.footer_email)
+
+}
+
+
+setupContact
+
+
+
+function setupContact(data) {
+    console.log('setupContact' , data)
+    let contactTitle = $('#contact-title');
+    let contactDescription = $('#contact-description');
+
+    
+    contactTitle.html(data.title)
+    contactDescription.html(data.content)
+
 }
 
