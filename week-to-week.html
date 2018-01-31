@@ -145,11 +145,17 @@
 
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="week-to-week.html">Week-To-Week Games</a></li>
+
+                <li class="dropdown-submenu">
+                    <a class="test" href="#">Week-To-Week Games<span class="caret"></span></a>
+                    <ul class="dropdown-menu font-italic">
+                        <li><a href="week-to-week.html#players" style="font-style: italic">Players</a></li>
+                        <li><a href="week-to-week.html#goalies" style="font-style: italic">Goalies</a></li>
+                    </ul>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div> 
-
 </nav>
     
             <br>
@@ -162,7 +168,7 @@
 
 
             <!--Test section-->
-            <section id="test" class="test bg-grey roomy-60 fix">
+            <section id="players" class="test bg-grey roomy-60 fix">
                 <div class="container">
                     <div class="row">                        
                         <div class="main_test fix">
@@ -192,7 +198,37 @@
                 </div>
             </section><!-- End off test section -->
 
+ <!--Test section-->
+            <section id="goalies" class="test roomy-60 fix">
+                <div class="container">
+                    <div class="row">                        
+                        <div class="main_test fix">
 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="head_title text-center fix">
+                                    <h2 id="week-to-week-goalies-title" class="text-uppercase"></h2>
+                                    <h5 id="week-to-week-goalies-description"></h5>
+                                       
+                                        <script type="text/javascript" src="//ryanmasonjar.checkfront.com/lib/interface--31.js"></script>
+                                        <!-- CHECKFRONT BOOKING PLUGIN v23-->
+                                        <div id="CHECKFRONT_WIDGET_01"><p id="CHECKFRONT_LOADER" style="background: url('//ryanmasonjar.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">Searching Availability...</p></div>
+                                        <script>
+                                        new DROPLET.Widget ({
+                                        host: 'ryanmasonjar.checkfront.com',
+                                        target: 'CHECKFRONT_WIDGET_01',
+                                        date: '20180101',
+                                        provider: 'droplet'
+                                        }).render();
+                                        </script>
+                                    <noscript><a href="https://ryanmasonjar.checkfront.com/reserve/" style="font-size: 16px">Continue to Secure Booking System &raquo;</a></noscript>
+                                </div>
+                            </div>
+
+                   
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End off test section -->
 
 
 

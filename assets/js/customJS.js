@@ -80,14 +80,19 @@ function setupAbout(data) {
     let assumptions = $('#assumptions-description');
     let concussion = $('#concussion-description');
     let concussionPdf = $('#concussion-pdf')
+    let waivePdf = $('#waive-pdf')
+
+    
 
     title.text(data.title)
     description.html(data.content)
     rules.html(data.metadata.rules_and_policies)
     faq.html(data.metadata.faq)
     assumptions.html(data.metadata.assumption_of_risk)
-    concussion.html(data.metadata.concussion_protocol)
+    concussion.html(data.metadata.electronic_waive)
     concussionPdf.attr('src', data.metadata.concussion_pdf.url)
+    waivePdf.attr('src', data.metadata.waive_pdf.url)
+
 
 }
 
@@ -105,9 +110,17 @@ function setupLocations(data) {
 function setupW2W(data) {
     let title = $('#week-to-week-title');
     let description = $('#week-to-week-description');
+    let goaliesTitle = $('#week-to-week-goalies-title');
+    let goaliesDescription = $('#week-to-week-goalies-description');
+
     title.text(data.title)
     description.html(data.content)
+    goaliesTitle.text(data.metadata.goalie_title)
+    goaliesDescription.html(data.metadata.goalies_description)
 }
+
+
+
 
 function setupFooter(data) {
     let footerAddress = $('#footer-address');
