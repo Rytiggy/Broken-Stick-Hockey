@@ -90,8 +90,8 @@ function setupAbout(data) {
     faq.html(data.metadata.faq)
     assumptions.html(data.metadata.assumption_of_risk)
     concussion.html(data.metadata.electronic_waive)
-    concussionPdf.attr('src', data.metadata.concussion_pdf.url)
-    waivePdf.attr('src', data.metadata.waive_pdf.url)
+    concussionPdf.attr('src', data.metadata.concussion_pdf.url+ '#toolbar=0&navpanes=0&scrollbar=0')
+    waivePdf.attr('src', data.metadata.waive_pdf.url + '#toolbar=0&navpanes=0&scrollbar=0')
 
 
 }
