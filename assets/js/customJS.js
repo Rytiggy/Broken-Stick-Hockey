@@ -90,7 +90,7 @@ function setupAbout(data) {
     title.text(data.title)
     description.html(data.content)
     rules.html(data.metadata.rules_and_policies)
-    faq.html(data.metadata.faq)
+    faq.html(data.metadata.referee_info)
     assumptions.html(data.metadata.assumption_of_risk)
     concussion.html(data.metadata.electronic_waive)
     howitworks.html(data.metadata.how_it_works)
