@@ -10,13 +10,16 @@ $( document ).ready(function() {
         error: function(data){
         },
         success: function(data){
+            console.log(data)
           //do something with data 
             setupContact(data.objects[0])
             setupFooter(data.objects[1])
             setupW2W(data.objects[2])
             setupLocations(data.objects[3])
             setupAbout(data.objects[4])
-            setupHomepage(data.objects[5]) 
+            setupHomepage(data.objects[5])
+
+
         }
     });
 
@@ -73,6 +76,7 @@ function setupHomepage(data) {
 
 
 function setupAbout(data) {
+    console.log(data)
     let title = $('#about-title');
     let description = $('#about-description');
     let rules = $('#rules-description');
@@ -81,15 +85,15 @@ function setupAbout(data) {
     let concussion = $('#concussion-description');
     let concussionPdf = $('#concussion-pdf')
     let waivePdf = $('#waive-pdf')
-
+    let howitworks = $('#how-it-works-description')
     
-
     title.text(data.title)
     description.html(data.content)
     rules.html(data.metadata.rules_and_policies)
     faq.html(data.metadata.faq)
     assumptions.html(data.metadata.assumption_of_risk)
     concussion.html(data.metadata.electronic_waive)
+    howitworks.html(data.metadata.how_it_works)
     concussionPdf.attr('src', data.metadata.concussion_pdf.url+ '#toolbar=0&navpanes=0&scrollbar=0')
     waivePdf.attr('src', data.metadata.waive_pdf.url + '#toolbar=0&navpanes=0&scrollbar=0')
 
