@@ -1,3 +1,14 @@
+/*
+.culmn{ margin-top: 72px !important; }
+nav.navbar.bootsnav.navbar-fixed {
+    top: 0;
+}
+*/
+/*nav {
+    position: relative;
+    height: 100px;
+
+}*/
 
 
 .custum-header {
@@ -64,7 +75,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, p span {
 }
 
 table {
-    background-color: transparent;
+    background-color: transparent!important;
     text-align: left;
     max-width: 600px;
     /* margin: 0 auto; */
@@ -77,4 +88,12 @@ table td {
     list-style:disc inside;*/
     padding:4px 0px;
     margin:0;
+}
+
+.anchor{
+  display: block;
+  height: 123px; /*same height as header*/
+  margin-top: -123px;
+   /*same height as header*/
+  visibility: hidden;
 }

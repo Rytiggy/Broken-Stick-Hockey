@@ -31,6 +31,7 @@ $( document ).ready(function() {
 
  $('.dropdown-submenu a.test').on("click", function(e){
     $(this).next('ul').toggle();
+    console.log('fgfg')
     e.stopPropagation();
     e.preventDefault();
   });
@@ -80,7 +81,7 @@ function setupAbout(data) {
     let title = $('#about-title');
     let description = $('#about-description');
     let rules = $('#rules-description');
-    let faq = $('#faq-description');
+    let refereeInformation = $('#referee-information-description');
     let assumptions = $('#assumptions-description');
     let concussion = $('#concussion-description');
     let concussionPdf = $('#concussion-pdf')
@@ -90,7 +91,7 @@ function setupAbout(data) {
     title.text(data.title)
     description.html(data.content)
     rules.html(data.metadata.rules_and_policies)
-    faq.html(data.metadata.referee_info)
+    refereeInformation.html(data.metadata.referee_info)
     assumptions.html(data.metadata.assumption_of_risk)
     concussion.html(data.metadata.electronic_waive)
     howitworks.html(data.metadata.how_it_works)
