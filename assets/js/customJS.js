@@ -8,11 +8,24 @@ $( document ).ready(function() {
         type: 'get',
         dataType: 'json',
         error: function(data){
-            $.getJSON( "../assets/broken-stick-hockey.json", function( data ) {
-                console.log('should be back up data', data)
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/Rytiggy/Broken-Stick-Hockey/master/assets/Broken-Stick-Hockey.json',
+                type: 'get',
+                dataType: 'json',
+                error: function(data){                   
+                },
+                success: function(data){
+                  console.log(data)
+                    //do something with data 
+                    setupContact(data.objects[0])
+                    setupFooter(data.objects[1])
+                    setupW2W(data.objects[2])
+                    setupLocations(data.objects[3])
+                    setupAbout(data.objects[4])
+                    setupHomepage(data.objects[5])
 
-            })
-
+                }
+            });
 
 
 
