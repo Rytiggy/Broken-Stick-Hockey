@@ -11,7 +11,7 @@ $( document ).ready(function() {
             $.ajax({
                     url: 'assets/broken-sticks-hockey.json',
                     type: 'get',
-                    dataType: 'json',
+                    dataType: 'jsonp',
                     error: function(data){                       
                     },
                     success: function(data){
