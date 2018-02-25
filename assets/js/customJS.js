@@ -4,10 +4,25 @@ $( document ).ready(function() {
 
 
     $.ajax({
-        url: 'https://api.cosmicjs.com/v1/broken-sticks-hockey/object-type/pages?pretty=true&hide_metafields=true',
+        url: 'https://api.cosmsicjs.com/v1/broken-sticks-hockey/object-type/pages?pretty=true&hide_metafields=true',
         type: 'get',
         dataType: 'json',
         error: function(data){
+            $.ajax({
+                    url: 'assets/broken-sticks-hockey.json',
+                    type: 'get',
+                    dataType: 'json',
+                    error: function(data){                       
+                    },
+                    success: function(data){
+                      console.log(data)
+
+                    }
+                });
+
+
+
+
         },
         success: function(data){
             console.log(data)
