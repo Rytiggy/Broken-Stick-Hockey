@@ -12,7 +12,9 @@ $( document ).ready(function() {
                     url: 'assets/broken-sticks-hockey.json',
                     type: 'get',
                     dataType: 'jsonp',
-                    error: function(data){                       
+                    error: function(data){   
+                        console.log('data', data)
+                    
                     },
                     success: function(data){
                       console.log(data)
