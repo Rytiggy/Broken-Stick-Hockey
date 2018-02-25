@@ -9,7 +9,7 @@ $( document ).ready(function() {
         dataType: 'json',
         error: function(data){
             $.ajax({
-                    url: 'assets/broken-sticks-hockey.json',
+                    url: '../assets/broken-stick-hockey.json',
                     type: 'get',
                     dataType: 'jsonp',
                     error: function(data){   
