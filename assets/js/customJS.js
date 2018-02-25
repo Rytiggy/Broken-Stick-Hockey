@@ -115,13 +115,9 @@ function setupLocations(data) {
 function setupW2W(data) {
     let title = $('#week-to-week-title');
     let description = $('#week-to-week-description');
-    let goaliesTitle = $('#week-to-week-goalies-title');
-    let goaliesDescription = $('#week-to-week-goalies-description');
 
     title.text(data.title)
     description.html(data.content)
-    goaliesTitle.text(data.metadata.goalie_title)
-    goaliesDescription.html(data.metadata.goalies_description)
 }
 
 
