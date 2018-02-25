@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
 
     $.ajax({
-        url: 'https://api.cosmsicjs.com/v1/broken-sticks-hockey/object-type/pages?pretty=true&hide_metafields=true',
+        url: 'https://api.cosmicjs.com/v1/broken-sticks-hockey/object-type/pages?pretty=true&hide_metafields=true',
         type: 'get',
         dataType: 'json',
         error: function(data){
