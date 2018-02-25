@@ -8,19 +8,11 @@ $( document ).ready(function() {
         type: 'get',
         dataType: 'json',
         error: function(data){
-            $.ajax({
-                    url: '../assets/broken-stick-hockey.json',
-                    type: 'get',
-                    dataType: 'jsonp',
-                    error: function(data){   
-                        console.log('data', data)
-                    
-                    },
-                    success: function(data){
-                      console.log(data)
+            $.getJSON( "../assets/broken-stick-hockey.json", function( data ) {
+                console.log('should be back up data', data)
 
-                    }
-                });
+            })
+
 
 
 
@@ -48,7 +40,6 @@ $( document ).ready(function() {
 
  $('.dropdown-submenu a.test').on("click", function(e){
     $(this).next('ul').toggle();
-    console.log('fgfg')
     e.stopPropagation();
     e.preventDefault();
   });
