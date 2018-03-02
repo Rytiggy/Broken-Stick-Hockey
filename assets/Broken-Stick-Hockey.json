@@ -119,7 +119,7 @@
         "order": 3,
         "slug": "locations",
         "title": "Locations",
-        "content": "<p><strong><span style=\"font-size: 18px;\">Northtown Center</span></strong><br><span style=\"font-size: 14px;\">1615 Amherst Manor Dr.<br>Williamsville, NY 14221</span><br><span style=\"font-size: 14px;\">(716) 631-7555</span><br><br><strong><span style=\"font-size: 18px;\">Holiday Twin Rinks</span></strong><br>3465 Broadway<br>Cheektowaga, NY 14227<br>(716) 685-3660</p>",
+        "content": "<p><strong><span style=\"font-size: 18px;\">Northtown Center</span></strong><br><span style=\"font-size: 14px;\">1615 Amherst Manor Dr.<br>Williamsville, NY 14221</span><br><span style=\"font-size: 14px;\">(716) 631-7555</span><br><br><strong><span style=\"font-size: 18px;\">Holiday Twin Rinks</span></strong><br>3465 Broadway St.<br>Cheektowaga, NY 14227<br>(716) 685-3660</p>",
         "metafields": [],
         "bucket": "5a6e24fb9210b869e159b4d4",
         "type_slug": "pages",
@@ -132,7 +132,7 @@
           "slug_field": 1
         },
         "status": "published",
-        "modified_at": "2018-02-04T18:54:27.207Z",
+        "modified_at": "2018-03-02T16:56:01.548Z",
         "modified_by": "5a6fa86556668b7382230bfb",
         "publish_at": null
       },
