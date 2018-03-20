@@ -13,8 +13,9 @@ nav.navbar.bootsnav.navbar-fixed {
 
 .custum-header {
 	color: #76787b;
-  font-size: 30px;
-	line-height: 30px;
+	    font-size: 2rem;
+	    vertical-align: middle;
+	line-height: 35px;
 	padding-bottom: 40px!important;
 }
 
