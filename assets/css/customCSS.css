@@ -108,3 +108,9 @@ table td {
 	    margin-top: 21px;
 	}
 }
+
+@media (max-width: 470px) {
+  .custum-header {
+    font-size: 1.3rem;
+  }
+}
