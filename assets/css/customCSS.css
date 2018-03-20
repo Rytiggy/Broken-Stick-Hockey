@@ -9,7 +9,9 @@ nav.navbar.bootsnav.navbar-fixed {
     height: 100px;
 
 }*/
-
+body {
+   min-width: 300px;
+}
 
 .custum-header {
 	color: #76787b;
