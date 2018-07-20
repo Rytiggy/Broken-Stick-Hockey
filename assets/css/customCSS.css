@@ -103,6 +103,9 @@ table td {
   visibility: hidden;
 }
 
+.jersey {
+  height: 300px;
+}
 @media (max-width: 992px) {
 	nav.navbar.bootsnav .navbar-toggle {
 	    display: inline-block;
