@@ -1,5 +1,7 @@
 $(document).ready(function() {
   console.log("ready!");
+  $("#myCarousel").carousel({interval: 3000});
+
   setupContact(bshData.objects[0]);
   setupFooter(bshData.objects[1]);
   setupW2W(bshData.objects[2]);
