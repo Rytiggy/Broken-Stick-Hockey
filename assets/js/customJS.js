@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   setupContact(bshData.objects[0]);
   setupFooter(bshData.objects[1]);
-  setupW2W(bshData.objects[2]);
+  // setupW2W(bshData.objects[2]);
   // setupLocations(bshData.objects[3]);
   setupAbout(bshData.objects[4]);
   setupHomepage(bshData.objects[5]);
