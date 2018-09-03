@@ -196,6 +196,9 @@ table td {
 
  */
 
+.sponsors-img {
+  height:100px;
+}
 
 @media (max-width: 992px) {
 	nav.navbar.bootsnav .navbar-toggle {
