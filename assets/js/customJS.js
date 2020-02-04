@@ -154,7 +154,7 @@ let bshData = {
       "modified_by": "5a6fa86556668b7382230bfb",
       "publish_at": null,
       "metadata": {
-        "footer_location": "<p>PO Box 254<br>Orchard Park, NY 14127</p>",
+        "footer_location": "<p>39 Hilltowne Dr<br>Orchard Park, NY 14127</p>",
         "footer_email": "ktedesco@brokenstickshockey.com"
       }
     },
