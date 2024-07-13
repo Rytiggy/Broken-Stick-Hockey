@@ -1364,3 +1364,8 @@ work Section style
   height: 100%;
   overflow: scroll;
 }
+
+.icon {
+  width: 17px;
+  padding-bottom: 2px;
+}
