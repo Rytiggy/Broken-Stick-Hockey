@@ -4,7 +4,7 @@
       "_id": "5a6fdcfe58fef24f12c5a205",
       "slug": "contact",
       "title": "Contact",
-      "content": "<section id=\"test\"><h5 id=\"contact-description\">Please enter your email address and your message and we will be in touch!</h5><p><br></p></section><section id=\"features\"><br></section>",
+      "content": "<section id=\"test\"><h5 id=\"contact-description\">For any questions, comments, or concerns, please contact us at <a href=\"mailto:ktedesco@brokenstickshockey.com\" id=\"contact-email\"> ktedesco@brokenstickshockey.com</a></h5><p><br></p></section><section id=\"features\"><br></section>",
       "bucket": "5a6e24fb9210b869e159b4d4",
       "type_slug": "pages",
       "created_at": "2018-01-30T02:48:30.324Z",
